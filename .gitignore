@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+~$*.xlsx
+
+# Not: kalıcı veri dosyaları (.env, kota, geçmiş, önbellek, izleme listesi)
+# artık proje dizininde değil, kullanıcı ana dizinindeki ~/.vtad/ altında
+# tutulur; bu yüzden burada ayrıca listelenmesine gerek yok.

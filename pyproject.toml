@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vtad-threat-intelligence"
+version = "0.1.0"
+description = "VirusTotal, AbuseIPDB, Censys ve RDAP verileriyle IP/domain tehdit istihbaratı kontrol aracı"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests",
+    "python-dotenv",
+    "colorama",
+    "openpyxl",
+]
+
+[project.scripts]
+vtad = "vtad.main:main"
+
+[tool.setuptools.packages.find]
+include = ["vtad*"]
