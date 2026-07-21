@@ -650,7 +650,6 @@ def print_banner() -> None:
 
 def main() -> None:
     colorama_init()
-    print_banner()
     parser = build_parser()
     args = parser.parse_args()
 
@@ -672,6 +671,7 @@ def main() -> None:
         parser.error("'target' ve --excel aynı anda kullanılamaz")
 
     if not args.target and not args.excel and not args.watch_run:
+        print_banner()
         parser.print_help()
         return
 
